@@ -7,11 +7,11 @@ function MessageHistory({ list }) {
       <ul>
          {list.map((i) =>
             i.type === 'response' ? (
-               <Response props={i} key={i.id}/>
+               <Response props={i} key={i.id} />
             ) : i.type === 'message' ? (
                <Message props={i} key={i.id} />
             ) : (
-               <Typing props={i} key={i.id}/>
+               <Typing props={i} key={i.id} />
             )
          )}
       </ul>
